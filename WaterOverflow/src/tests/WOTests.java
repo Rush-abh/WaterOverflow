@@ -12,7 +12,7 @@ GlassOperations g_ops;
 	
     @BeforeEach
     public void setUp() throws Exception {  
-        System.out.println("before glass ops");  
+        System.out.println("before glass ops execution");  
         g_ops = new GlassOperations();
         
     }  
