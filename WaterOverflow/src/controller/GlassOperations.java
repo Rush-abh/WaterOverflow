@@ -19,7 +19,7 @@ public class GlassOperations {
 
 		// find number of glasses
 		int g = Math.round((i * (i + 1) / 2));
-		float[] glass = new float[g + 5];
+		float[] glass = new float[g + 50];
 
 		// fill top glass
 		int index = 0;
@@ -30,7 +30,7 @@ public class GlassOperations {
 		for (int row = 1; row <= i; ++row) {
 			// Fill glasses in a given row. Number of columns in a row is equal to row number
 			for (int col = 0; col < row; ++col, ++index) {
-				System.out.println("r = " + row + " col = " + col + " index = " + index);
+				//System.out.println("r = " + row + " col = " + col + " index = " + index);
 				
 				// get water from current glass
 				X = glass[index];
@@ -45,7 +45,7 @@ public class GlassOperations {
 				glass[index + row] += X / 2;
 				glass[index + row + 1] += X / 2;
 
-				System.out.println(Arrays.toString(glass));
+				//System.out.println(Arrays.toString(glass));
 			}
 		}
 
